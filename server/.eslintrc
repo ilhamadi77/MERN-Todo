@@ -1,0 +1,15 @@
+/* eslint-env node */
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier" // Add extra exclusions for the @typescript-eslint
+  ],
+  "rules": {
+    "no-console": ["warn", { "allow": ["info"] }],
+    // "prettier/prettier": "error"
+  }
+}
